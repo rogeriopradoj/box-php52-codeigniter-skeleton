@@ -1,0 +1,27 @@
+{
+    "name": "rogeriopradoj/box-php52-codeigniter-skeleton",
+    "description": "Base para projetos da box, php52 e codeigniter; base for box projects, php52 and codeigniter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rogerio Prado de Jesus",
+            "email": "rogeriopradoj@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">5.2.6",
+        "xrstf/composer-php52": "1.*",
+        "rogeriopradoj/codeigniter": "2.2.1-rc.1"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-update-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-autoload-dump": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ]
+    }
+}
