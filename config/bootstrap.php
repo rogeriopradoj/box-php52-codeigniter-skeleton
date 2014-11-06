@@ -3,6 +3,10 @@
 ini_set('default_charset', 'utf-8');
 date_default_timezone_set('America/Sao_Paulo');
 
+define('VENDOR_PATH_COMPOSER', realpath(dirname(__FILE__) . '/../vendor/'));
+define('CODEIGNITER_VENDOR', 'rogeriopradoj/codeigniter');
+
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -61,7 +65,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-    $system_path = realpath(dirname(__FILE__) . '/../vendor/rogeriopradoj/codeigniter/system');
+    $system_path = VENDOR_PATH_COMPOSER . '/' .  CODEIGNITER_VENDOR . '/system';
 
 /*
  *---------------------------------------------------------------
@@ -131,10 +135,10 @@ if (defined('ENVIRONMENT'))
 // Composer autoload
 if (version_compare(phpversion(), '5.3.0', '<')) {
     //echo nl2br(phpversion() . PHP_EOL);
-    require_once 'vendor/autoload_52.php';
+    require_once VENDOR_PATH_COMPOSER . '/autoload_52.php';
 } else {
     //echo nl2br(phpversion() . PHP_EOL);
-    require_once 'vendor/autoload.php';
+    require_once VENDOR_PATH_COMPOSER . '/autoload.php';
 }
 
 // --------------------------------------------------------------------

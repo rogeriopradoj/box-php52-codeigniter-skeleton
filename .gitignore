@@ -1,2 +1,5 @@
-vendor
+/vendor
+
+# For your application, you probably want to remove or comment this line
+# to store composer.lock in your repository
 composer.lock
