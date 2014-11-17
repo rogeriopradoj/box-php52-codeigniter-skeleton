@@ -10,15 +10,18 @@
     ],
     "require": {
         "php": ">5.2.6",
+        "ext-odbc": "*",
 
         "rogeriopradoj/composer-php52": "~1",
         
         "rogeriopradoj/codeigniter": "2.2.1-rc.1",
+        "phpmailer/phpmailer": "~5.2",
+        "twig/twig": "~1.16",
 
         "components/jquery": "~2",
         "components/datatables": "~1.10",
         "netbrain/highcharts-js": "*",
-        "components/bootstrap": "~3",
+        "components/bootstrap": "~3"
 
 
     },
@@ -32,11 +35,5 @@
         "post-autoload-dump": [
             "RogerioPradoJ\\Composer52\\Generator::onPostInstallCmd"
         ]
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/rogeriopradoj/datatables-components-composer.git"
-        }
-    ]
+    }
 }
