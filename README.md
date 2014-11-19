@@ -25,7 +25,14 @@ Acesse [http://getcomposer.org/doc/00-intro.md#installation](http://getcomposer.
 $ composer create-project rogeriopradoj/box-php52-codeigniter-skeleton /path/to/your/project
 ```
 
-### Teste
+### Defina seus arquivos de configuração
+
+No CodeIgniter, 3 arquivos de configuração são os mais utilizados:
+- application/config/autoload.php 
+- application/config/config.php (e application/config/development/config.php)
+- application/config/database.php (e application/config/development/database.php)
+
+### Sirva e acesse
 
 Levante um servidor web (exemplo com o servidor embutido PHP 5.4+):
 
